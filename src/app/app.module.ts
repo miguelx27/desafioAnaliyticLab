@@ -4,19 +4,26 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { MapboxComponent } from './components/mapbox/mapbox.component';
+import { HttpClientModule } from '@angular/common/http'
+import { QueryService } from './services/query.service';
+import { GraphComponent } from './components/graph/graph.component' 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    MapboxComponent,
+    GraphComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [QueryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
