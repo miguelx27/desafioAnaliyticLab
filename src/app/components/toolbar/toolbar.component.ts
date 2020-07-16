@@ -13,4 +13,8 @@ export class ToolbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  scrollPosition(id) {
+        let move = document.getElementById(id).offsetTop
+        document.documentElement.scrollTop = move - 90
+  }
 }

@@ -42,6 +42,20 @@ export class GraphComponent implements OnInit {
                      ],
                    },
                  });
+                var ctx2 = document.getElementById('myChart2');
+                  new Chart(ctx2, {
+                   type: 'bar',
+                   data: {
+                     labels: labels,
+                     datasets: [
+                       {
+                         label: 'Ventas',
+                         data: data,
+                         backgroundColor: 'rgba(66, 100, 251, .3)'
+                       },
+                     ],
+                   },
+                 });
   }
 
 }

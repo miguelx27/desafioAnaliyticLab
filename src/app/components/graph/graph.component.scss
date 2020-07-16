@@ -1,0 +1,27 @@
+#graph-commerces{
+    .graph{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation: fade 2s ease-in-out;
+        #myChart{
+            flex: 1;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 1px 5px 5px rgba(0,0,0,.5);
+            max-width: 800px;
+            margin: 10px;
+        }
+        #myChart2{
+            flex: 1;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 1px 5px 5px rgba(0,0,0,.5);
+            max-width: 800px;
+            margin: 10px;
+        }
+    }
+}

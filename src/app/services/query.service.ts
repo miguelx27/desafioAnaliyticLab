@@ -8,6 +8,7 @@ export class QueryService {
 
   urlLayer: string = 'https://alw-lab.herokuapp.com/commerces/layer';
   urlGraph: string = 'https://alw-lab.herokuapp.com/commerces/graph';
+  urlCommerces: string = 'https://alw-lab.herokuapp.com/commerces';
 
   constructor( private http: HttpClient) { }
   layer(){
@@ -15,5 +16,8 @@ export class QueryService {
   }
   graph(){
     return this.http.get(this.urlGraph);
+  }
+  commerces(){
+    return this.http.get(this.urlCommerces);
   }
 }

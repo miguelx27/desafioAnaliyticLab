@@ -8,14 +8,16 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MapboxComponent } from './components/mapbox/mapbox.component';
 import { HttpClientModule } from '@angular/common/http'
 import { QueryService } from './services/query.service';
-import { GraphComponent } from './components/graph/graph.component' 
+import { GraphComponent } from './components/graph/graph.component';
+import { CommercesComponent } from './components/commerces/commerces.component' 
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     MapboxComponent,
-    GraphComponent
+    GraphComponent,
+    CommercesComponent
   ],
   imports: [
     BrowserModule,

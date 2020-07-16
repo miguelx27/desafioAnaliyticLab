@@ -1,0 +1,18 @@
+#commerce-container{
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card-commerce{
+            display: flex;
+            flex-direction: column;
+            width: 220px;
+            height: 229px;
+            margin: 13px 15px;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 5px 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.39);
+        }
+    }
+}

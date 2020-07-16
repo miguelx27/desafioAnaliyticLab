@@ -7,4 +7,124 @@ html ,body {
     width: 100%;
     height: 100%;
     margin: 0;
+    background: #363636;
+    padding-top: 28px;
+    scroll-behavior: smooth;
+}
+//Style de para texto
+.text{
+    font-family: 'Segoe UI';
+    &.color{
+        &-white{
+            color: #ffffff;
+        }
+        &-black {
+            color: #000000;
+        }
+        &-grayDark{
+            color: #393e46;
+        }
+        &-blueDark{
+            color: #444B57;
+        }
+    }
+    &.size{
+        &-13{
+            font-size: 13px;
+        }
+        &-14{
+            font-size: 14px;
+        }
+        &-18{
+            font-size: 18px;
+        }
+        &-20{
+            font-size: 20px;
+        }
+        &-25{
+            font-size: 25px;
+        }
+    }
+    &.weight{
+        &-600{
+            font-weight: 600;
+        }
+        &-700{
+            font-weight: 700;
+        }
+    }
+    &.after-border{
+        position: relative;
+        &::after{
+            content: "";
+            width: 120%;
+            border: 1px solid white;
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+        }
+    }
+    &.aling{
+        &-center{
+            text-align: center;
+        }
+        &-left{
+            text-align: left;
+        }
+        &-right{
+            text-align: right;
+        }
+    }
+    &.word-spacing{
+        word-spacing: -2px;
+    }
+}
+
+//scroll-bar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px ;
+}
+
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1) !important;
+  background: #EBECED !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc !important;
+  outline: 1px solid #fff !important;
+  border-radius: 47px !important;
+  border: 1px solid #fff !important;
+  -webkit-box-shadow: 0px -1px 0px #d1d1d1 !important;
+  -moz-box-shadow: 0px -1px 0px #d1d1d1 !important;
+  box-shadow: inset 0px 0px 4px #fff !important;
+  width: 100% !important;
+}
+
+// Style varrios
+.tittle{
+    margin: 18px 0 30px 30px;
+    animation: leftToRight 1s ease-in-out;
+}
+
+// animations
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes leftToRight {
+    0% {
+        opacity: 0;
+        transform: translate(-320px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
