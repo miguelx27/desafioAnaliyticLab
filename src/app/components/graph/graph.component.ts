@@ -14,6 +14,7 @@ export class GraphComponent implements OnInit {
   constructor( private queryMapbox: QueryService) { }
 
   ngOnInit(): void {
+    //query en el cual se obtiene las datos de la grafica y se llama a la función loadGrapgh
     this.queryMapbox.graph().subscribe((res: any[]) => {
       this.data = res
       this.loadGraph();
@@ -21,6 +22,7 @@ export class GraphComponent implements OnInit {
            
   }
 
+  //Carga de data en la gráficas y creación de las mismas
   loadGraph (){
                 var labels = this.data.map(function(e) {
                   return e.name;

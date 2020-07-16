@@ -15,6 +15,7 @@ export class MapboxComponent implements OnInit {
   constructor( private queryMapbox : QueryService) { }
 
   ngOnInit() {
+    //llamada del mapbox
     	mapboxgl.accessToken = environment.mapboxKey
       var map = new mapboxgl.Map({
         container: 'map-box',
@@ -22,6 +23,7 @@ export class MapboxComponent implements OnInit {
         zoom: 11,
         center: [-74.075278, 4.645401],
       });
+          //query get de las capas Geojson y implementación de las mismas en el mapa
           this.queryMapbox.layer().subscribe((res: any[]) => {
             map.on('load', function () {
               // Add an image to use as a custom marker

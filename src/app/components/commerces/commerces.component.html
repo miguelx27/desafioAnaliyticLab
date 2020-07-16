@@ -1,18 +1,25 @@
+<!-- html del componente comercios -->
 <div id="commerce-container">
     <div class="tittle" id="position-commerces">
         <span class="text color-white size-25 weight-600 after-border">Lista de comercios</span>
     </div>
     <div class="card-container">
         <div class="card-commerce" *ngFor="let item of commerces; index as i" [ngStyle]="{'animation': 'leftToRight '+ i / 3 +'s ease-in-out'}">
-            <span class="text color-grayDark aling-center weight-600 size-20">{{item.name}}</span>
-            <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Nit: </span> {{item.nit}}</span>
-            <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Dirección: </span> {{item.address}}</span>
-            <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Días: </span>{{item.days}}</span>
-            <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Horario: </span>{{item.schedule}}</span>
-            <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Propietario: </span>{{item.owner}}</span>
-            <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Teléfono: </span>{{item.phone}}</span>
-            <span class="text color-grayDark aling-center weight-600 size-18 word-spacing">N° de ventas</span>
-            <span class="text color-grayDark aling-center">{{item.sales | number}}</span>
+            <div class="card-inside">
+                <div class="front">
+                    <span class="text color-grayDark aling-center weight-600 size-20 margin-bot-10">{{item.name}}</span>
+                    <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Nit: </span>{{item.nit}}</span>
+                    <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Dirección: </span> {{item.address}}</span>
+                    <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Días: </span>{{item.days}}</span>
+                    <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Horario: </span>{{item.schedule}}</span>
+                    <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Propietario: </span>{{item.owner}}</span>
+                    <span class="text color-grayDark size-13"><span class="text color-blueDark size-14 weight-700">Teléfono: </span>{{item.phone}}</span>
+                </div>
+                <div class="back">
+                    <span class="text color-grayDark aling-center weight-600 size-22 word-spacing">N° de ventas</span>
+                    <span class="text color-grayDark aling-center size-20">{{item.sales | number}}</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

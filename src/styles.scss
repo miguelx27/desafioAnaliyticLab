@@ -41,6 +41,9 @@ html ,body {
         &-20{
             font-size: 20px;
         }
+        &-22{
+            font-size: 22px;
+        }
         &-25{
             font-size: 25px;
         }
@@ -78,6 +81,13 @@ html ,body {
     &.word-spacing{
         word-spacing: -2px;
     }
+    &.margin{
+        &-bot{
+            &-10{
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 //scroll-bar
@@ -87,7 +97,6 @@ html ,body {
 }
 
 ::-webkit-scrollbar-track {
-  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1) !important;
   background: #EBECED !important;
 }
 
@@ -102,7 +111,7 @@ html ,body {
   width: 100% !important;
 }
 
-// Style varrios
+// Style varios
 .tittle{
     margin: 18px 0 30px 30px;
     animation: leftToRight 1s ease-in-out;
